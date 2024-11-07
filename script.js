@@ -49,7 +49,7 @@ btn.addEventListener("click",()=>{
   voice.style.display="block";
 })
 
-// function to take command and perform action accordingly
+// function to take command and perform action accordingly when
 function takeCommand(message){
   btn.style.display="flex";
   voice.style.display="none";
