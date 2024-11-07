@@ -51,6 +51,7 @@ btn.addEventListener("click",()=>{
 
 // function to take command and perform action accordingly when
 function takeCommand(message){
+  
   btn.style.display="flex";
   voice.style.display="none";
        if(message.includes("hello") || message.includes("hey")){
