@@ -58,6 +58,7 @@ function takeCommand(message){
        }
        else if(message.includes("who are you?")){
           speak("I am a virtual assistant created by Rahul Sir");
+          
        }
        else if(message.includes("what is your name?")){
         speak("My name is Jadoo created by Rahul Sir");
