@@ -85,7 +85,7 @@ function takeCommand(message){
        else if(message.includes("opening amazon")){
         speak("opening instagram...");
         window.open("https://www.amazon.in//","_blank");
-     }
+     }  
      else if(message.includes("opening spotify")){
       speak("opening calculator...");
       window.open("https://open.spotify.com/","_blank");
