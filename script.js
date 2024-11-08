@@ -28,9 +28,9 @@ function wishMe(){
  }
 }
   
-// window.addEventListener('load',()=>{
-//   wishMe();
-// })
+window.addEventListener('load',()=>{
+  wishMe();
+})      
  
 // speak to convert key
 let speechRecognition = window.speechRecognition || window.webkitSpeechRecognition
@@ -57,13 +57,11 @@ function takeCommand(message){
        if(message.includes("hello") || message.includes("hey")){
         speak("Hello Sir! How can I help you?");
        }
-       else if(message.includes("who are you?")){
-          speak("I am a virtual assistant created by Rahul Sir");
-          
-       }
-       else if(message.includes("what is your name?")){
-        speak("My name is Jadoo created by Rahul Sir");
-     }
+       if (message.includes("who are you?")) {
+        speak("I am a virtual assistant created by Rahul Sir");
+    } else if (message.includes("what is your name?")) {
+        speak("My name is Jadoo, created by Rahul Sir");
+    }                                                                                    
        else if(message.includes("opening youtube")){
         speak("opening youtube...");
         window.open("https://www.youtube.com/","_blank");
@@ -86,7 +84,7 @@ function takeCommand(message){
      }
        else if(message.includes("opening amazon")){
         speak("opening instagram...");
-        window.open("https://www.amazon.in//","_blank");
+        window.open("https://www.amazon.com/","_blank");
      }  
      else if(message.includes("opening spotify")){
       speak("opening calculator...");
@@ -96,10 +94,12 @@ function takeCommand(message){
         speak("opening calculator...");
         window.open("calculator://");
      }
-       else if(message.includes("opening whatsapp")){
-        speak("opening whatsapp...");
-        window.open("whatsapp://");
-     }
+     else if (message.includes("opening whatsapp")) {
+      speak("opening WhatsApp...");
+      window.location.href = "whatsapp://send?text=Hello";
+  }
+  
+  
        else if(message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
         speak(time);
