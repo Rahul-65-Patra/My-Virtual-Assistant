@@ -54,24 +54,26 @@ function takeCommand(message){
   
   btn.style.display="flex";
   voice.style.display="none";
-       if(message.includes("hello") || message.includes("hey")){
+
+    if(message.includes("hello") || message.includes("hey")){
         speak("Hello Sir! How can I help you?");
        }
-       if (message.includes("who are you?")) {
+    else if (message.includes("who are you?")) {
         speak("I am a virtual assistant created by Rahul Sir");
-    } else if (message.includes("what is your name?")) {
+    } 
+    else if (message.includes("what is your name?")) {
         speak("My name is Jadoo, created by Rahul Sir");
     }                                                                                    
-       else if(message.includes("opening youtube")){
+    else if(message.includes("opening youtube")){
         speak("opening youtube...");
         window.open("https://www.youtube.com/","_blank");
      }
-       else if(message.includes("opening google")){
+    else if(message.includes("opening google")){
         speak("opening google...");
         window.open("https://www.google.com/","_blank");
      }
-       else if(message.includes("opening facebook")){
-        speak("opening youtube...");
+    else if(message.includes("opening facebook")){
+        speak("opening facebook...");
         window.open("https://www.facebook.com/","_blank");
      }
        else if(message.includes("opening instagram")){
@@ -83,24 +85,22 @@ function takeCommand(message){
         window.open("https://www.flipkart.com/","_blank");
      }
        else if(message.includes("opening amazon")){
-        speak("opening instagram...");
+        speak("opening amazon...");
         window.open("https://www.amazon.com/","_blank");
      }  
      else if(message.includes("opening spotify")){
-      speak("opening calculator...");
+      speak("opening spotify...");
       window.open("https://open.spotify.com/","_blank");
    }
        else if(message.includes("opening calculator")){
         speak("opening calculator...");
-        window.open("calculator://");
+        window.open("https://www.calculator.com/");
         
      }
      else if (message.includes("opening whatsapp")) {   
       speak("opening WhatsApp...");
-      window.location.href = "whatsapp://send?text=Hello";
-  }
-  
-  
+      window.open("https://web.whatsapp.com/");
+  }  
        else if(message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
         speak(time);
