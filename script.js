@@ -20,7 +20,7 @@ function wishMe(){
  if(hours >=0 && hours < 12){
   speak("Good Morning Sir");
  }
- else if(hours >= 12 && hours < 16){
+ else if(hours >= 12 && hours < 16){ 
   speak("Good Afternoon Sir");
  } 
  else{
@@ -95,7 +95,7 @@ function takeCommand(message){
         window.open("calculator://");
         
      }
-     else if (message.includes("opening whatsapp")) {
+     else if (message.includes("opening whatsapp")) {   
       speak("opening WhatsApp...");
       window.location.href = "whatsapp://send?text=Hello";
   }
