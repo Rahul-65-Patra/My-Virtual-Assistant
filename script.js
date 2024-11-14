@@ -8,7 +8,7 @@ function speak(text){
   speech.volume = 1;
   speech.rate = 1;
   speech.pitch = 1;
-  speech.lang = "bn-IN";
+  speech.lang = "hi-IN";
   window.speechSynthesis.speak(speech);
 }
   
@@ -67,7 +67,7 @@ function takeCommand(message){
     }                                                                          
     else if(message.includes("opening youtube")){
         speak("opening youtube...");
-        window.open("https://www.youtube.com/home","_blank");
+        window.open("https://www.youtube.com/","_blank");
      }
     else if(message.includes("opening google")){
         speak("opening google...");
@@ -100,17 +100,17 @@ function takeCommand(message){
      }
      else if (message.includes("opening whatsapp")) {   
       speak("opening WhatsApp...");
-      window.open("https://web.whatsapp.com/");
+      window.open( "whatsapp://send?text=Hello");
   }  
-       else if(message.includes("time")){
+       else if(message.includes("current time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
         speak(time);
      }
-       else if(message.includes("date")){
+       else if(message.includes("current date")){
         let date = new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date);
      }
-       else{
+       else{ 
         let findText = "this is what i found on internet regarding" + `${message.replace("Jadoo","") || message.replace('Jodoo','')}`
         speak(findText);
         window.open(`https://www.google.com/search?q=${message.replace('Jodoo','')}`,"_blank");
