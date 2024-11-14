@@ -71,19 +71,19 @@ function takeCommand(message){
      }
     else if(message.includes("opening google")){
         speak("opening google...");
-        window.open("https://www.google.com/home","_blank");
+        window.open("https://www.google.com","_blank");
      }
     else if(message.includes("opening facebook")){
         speak("opening facebook...");
-        window.open("https://www.facebook.com/home","_blank");
+        window.open("https://www.facebook.com","_blank");
      }
        else if(message.includes("opening instagram")){
         speak("opening instagram...");
-        window.open("https://www.instagram.com/home","_blank");
+        window.open("https://www.instagram.com/","_blank");
      }
        else if(message.includes("opening flipkart")){
         speak("opening flipkart...");
-        window.open("https://www.flipkart.com/home","_blank");
+        window.open("https://www.flipkart.com/","_blank");
      }
        else if(message.includes("opening amazon")){
         speak("opening amazon...");
