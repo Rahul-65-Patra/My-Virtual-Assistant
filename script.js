@@ -95,8 +95,7 @@ function takeCommand(message){
    }
        else if(message.includes("opening calculator")){
         speak("opening calculator...");
-        window.open("https://www.calculator.com/");
-        
+        window.open("calculator://");
      }
      else if (message.includes("opening whatsapp")) {   
       speak("opening WhatsApp...");
