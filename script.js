@@ -8,7 +8,7 @@ function speak(text){
   speech.volume = 1;
   speech.rate = 1;
   speech.pitch = 1;
-  speech.lang = "hi-IN";
+  speech.lang = "bn-IN";
   window.speechSynthesis.speak(speech);
 }
   
@@ -71,11 +71,11 @@ function takeCommand(message){
      }
     else if(message.includes("opening google")){
         speak("opening google...");
-        window.open("https://www.google.com","_blank");
+        window.open("https://www.google.com/","_blank");
      }
     else if(message.includes("opening facebook")){
         speak("opening facebook...");
-        window.open("https://www.facebook.com","_blank");
+        window.open("https://www.facebook.com/","_blank");
      }
        else if(message.includes("opening instagram")){
         speak("opening instagram...");
