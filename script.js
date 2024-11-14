@@ -99,7 +99,7 @@ function takeCommand(message){
      }
      else if (message.includes("opening whatsapp")) {   
       speak("opening WhatsApp...");
-      window.open( "whatsapp://");
+      window.open( "whatsapp://send?");
   }  
        else if(message.includes("current time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
