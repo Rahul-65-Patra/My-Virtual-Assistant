@@ -54,19 +54,20 @@ function takeCommand(message){
   
   btn.style.display="flex";
   voice.style.display="none";
+  console.log(message);
 
     if(message.includes("hello") || message.includes("hey")){
         speak("Hello Sir! How can I help you?");
        }
-    else if (message.includes("who are you?")) {
+    else if (message.includes("who are you")) {
         speak("I am a virtual assistant created by Rahul Sir");
     } 
-    else if (message.includes("what is your name?")) {
+    else if (message.includes("what is your name")) {
         speak("My name is Jadoo, created by Rahul Sir");
-    }                                                                                    
+    }                                                                          
     else if(message.includes("opening youtube")){
         speak("opening youtube...");
-        window.open("https://www.youtube.com/","_blank");
+        window.open("https://www.youtube.com/home","_blank");
      }
     else if(message.includes("opening google")){
         speak("opening google...");
