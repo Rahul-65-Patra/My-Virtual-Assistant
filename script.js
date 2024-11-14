@@ -57,47 +57,50 @@ function takeCommand(message){
   console.log(message);
 
     if(message.includes("hello") || message.includes("hey")){
-        speak("Hello Sir! How can I help you?");
+        speak("Hello Sir! How can I help you today");
        }
     else if (message.includes("who are you")) {
         speak("I am a virtual assistant created by Rahul Sir");
     } 
+    else if (message.includes("who created you")) {
+        speak("created by Rahul Sir");
+    } 
     else if (message.includes("what is your name")) {
         speak("My name is Jadoo, created by Rahul Sir");
     }                                                                          
-    else if(message.includes("opening youtube")){
+    else if(message.includes("youtube")){
         speak("opening youtube...");
         window.open("https://www.youtube.com/","_blank");
      }
-    else if(message.includes("opening google")){
+    else if(message.includes("google")){
         speak("opening google...");
         window.open("https://www.google.com/","_blank");
      }
-    else if(message.includes("opening facebook")){
+    else if(message.includes("facebook")){
         speak("opening facebook...");
         window.open("https://www.facebook.com/","_blank");
      }
-       else if(message.includes("opening instagram")){
+       else if(message.includes("instagram")){
         speak("opening instagram...");
         window.open("https://www.instagram.com/","_blank");
      }
-       else if(message.includes("opening flipkart")){
+       else if(message.includes("flipkart")){
         speak("opening flipkart...");
         window.open("https://www.flipkart.com/","_blank");
      }
-       else if(message.includes("opening amazon")){
+       else if(message.includes("amazon")){
         speak("opening amazon...");
         window.open("https://www.amazon.com/home","_blank");
      }  
-     else if(message.includes("opening spotify")){
+     else if(message.includes("spotify")){
       speak("opening spotify...");
       window.open("https://open.spotify.com/home","_blank");
    }
-       else if(message.includes("opening calculator")){
+       else if(message.includes("calculator")){
         speak("opening calculator...");
         window.open("calculator://");
      }
-     else if (message.includes("opening whatsapp")) {   
+     else if (message.includes("whatsapp")) {   
       speak("opening WhatsApp...");
       window.open( "whatsapp://send?text=Hello");
   }  
